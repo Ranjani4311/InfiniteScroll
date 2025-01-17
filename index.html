@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EJ2 Grid with Fill Height</title>
+  <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet"/>
+  <!-- below script triggers error :: check uncheck more than once will trigger error-->
+   <!-- <script src="grid-coreteam.js"></script> -->
+  <!-- below script version works -->
+  <script src="https://cdn.syncfusion.com/ej2/24.2.3/dist/ej2.min.js"></script>
+  <style>
+    .stackblitz-container {
+        overflow: hidden;
+        flex: 1 1 auto;
+      }
+
+      .stackblitz-container + div:has(img) {
+        display: none;
+      }
+      body {
+        height: 100dvh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .toolbar-demo {
+        height: 48px;
+        background: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1 0 auto;
+      }
+  </style>
+</head>
+<body>
+  <div class="toolbar-demo">
+    <span>Toolbar Demo</span>
+  </div>
+  <div class="stackblitz-container material3">
+    <div id="Grid"></div>
+  </div>
+  <script src="gridwidget.js">
+    	
+  </script>
+</body>
+</html>
