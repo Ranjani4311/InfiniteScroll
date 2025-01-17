@@ -1,34 +1,5 @@
-const columns = [
-            { field: 'name', headerText: 'This is to test the header text wrap settings in grid control', textAlign: 'Left', headerTextAlign: 'Left', type: 'string', format: '', width: null, autoFit: false },
-			{ field: 'age', headerText: 'age', textAlign: 'Left', headerTextAlign: 'Left', type: 'string', format: '', width: null, autoFit: false },
-            { field: 'city', headerText: 'City', textAlign: 'Left', headerTextAlign: 'Left', type: 'string', format: '', width: null, autoFit: false }
-        ];
-    const dataSource = [
-            { name: 'John Doe', age: 25, city: 'New YorkNew YorkNew York' },
-            { name: 'Jane Smith', age: 30, city: 'Los Angeles' },
-            { name: 'Michael Brown', age: 35, city: 'Chicago' },
-            { name: 'Emily Johnson', age: 28, city: 'San Francisco' },
-            { name: 'William Davis', age: 40, city: 'Seattle' },
-            { name: 'Sophia Garcia', age: 32, city: 'Boston' },
-            { name: 'James Wilson', age: 45, city: 'Houston' },
-            { name: 'Olivia Martinez', age: 29, city: 'Miami' },
-            { name: 'Benjamin Clark', age: 33, city: 'Denver' },
-            { name: 'Emma Rodriguez', age: 27, city: 'Atlanta' },
-            { name: 'Noah Harris', age: 34, city: 'Dallas' },
-            { name: 'Ava Lewis', age: 26, city: 'San Diego' },
-            { name: 'Lucas Walker', age: 31, city: 'Phoenix' },
-            { name: 'Mia Hall', age: 36, city: 'Detroit' },
-            { name: 'Alexander Young', age: 37, city: 'Las Vegas' },
-            { name: 'Isabella King', age: 38, city: 'Charlotte' },
-            { name: 'Ethan Wright', age: 39, city: 'Indianapolis' },
-            { name: 'Amelia Scott', age: 41, city: 'Philadelphia' },
-            { name: 'Mason Baker', age: 42, city: 'San Antonio' },
-            { name: 'Charlotte Perez', age: 43, city: 'Orlando' },
-            { name: 'Logan Lee', age: 44, city: 'Austin' },
-            { name: 'Sophia Thompson', age: 45, city: 'Nashville' },
-            { name: 'Ella White', age: 46, city: 'Portland' },
-            { name: 'Jacob Harris', age: 47, city: 'Baltimore' }
-        ];
+
+    
 
 
 	let stringData = JSON.stringify([
@@ -10837,48 +10808,17 @@ const columns = [
 
 ej.grids.Grid.Inject(ej.grids.InfiniteScroll);
 
-
-
 var grid = new ej.grids.Grid({
     dataSource: orderData,
-    enableAdaptiveUI: true,
-    showColumnChooser: true,
-    showColumnMenu: true,
-    allowSorting: true,
-    allowGrouping: false,
-    groupSettings: { showGroupedColumn: true },
-    allowFiltering: true,
-    filterSettings: { type: 'Excel' },
     enableInfiniteScrolling: true,
-  
     pageSettings: { pageSize: 20 },
-    allowExcelExport: true,
-    allowPdfExport: true,
     height: '100%',
-    load: () => {
-    //   if (!Browser.isDevice) {
-    //     grid.adaptiveDlgTarget = document.getElementsByClassName(
-    //       'stackblitz-container'
-    //     )[0] ;
-    //   }
-    },
     editSettings: {
       allowAdding: true,
       allowEditing: true,
       allowDeleting: true,
       mode: 'Dialog',
     },
-    toolbar: [
-      'Add',
-      'Edit',
-      'Delete',
-      'Update',
-      'Cancel',
-      'Search',
-      'ColumnChooser',
-      'ExcelExport',
-      'PdfExport',
-    ],
     columns: [
       {
         field: 'OrderID',
@@ -10907,24 +10847,9 @@ var grid = new ej.grids.Grid({
         validationRules: { required: true },
       },
     ],
-    //   aggregates: [
-    //     {
-    //       columns: [
-    //         {
-    //           type: 'Sum',
-    //           field: 'Freight',
-    //           format: 'C2',
-    //           footerTemplate: 'Sum: ${Sum}',
-    //         },
-    //       ],
-    //     },
-    //   ],
+    
   });
-//   if (Browser.isDevice) {
-//     grid.appendTo('#Grid');
-//   } else {
-//     grid.appendTo('#Grid');
-//   }
+
 
 grid.appendTo('#Grid');
   grid.toolbarClick = (args) => {
