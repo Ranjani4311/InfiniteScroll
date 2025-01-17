@@ -10835,7 +10835,7 @@ var grid = new ej.grids.Grid({
         validationRules: { required: true, number: true },
       },
       {
-        field: 'CustomerName',
+        field: 'CustomerID',
         headerText: 'Name',
         width: 180,
         validationRules: { required: true },
