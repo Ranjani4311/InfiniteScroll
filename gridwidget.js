@@ -10811,6 +10811,16 @@ ej.grids.Grid.Inject(ej.grids.InfiniteScroll);
 var grid = new ej.grids.Grid({
     dataSource: orderData,
     enableInfiniteScrolling: true,
+	allowExcelExport: true,
+    allowPdfExport: true,
+	enableAdaptiveUI: true,
+    showColumnChooser: true,
+    showColumnMenu: true,
+    allowSorting: true,
+    allowGrouping: false,
+    groupSettings: { showGroupedColumn: true },
+    allowFiltering: true,
+    filterSettings: { type: 'Excel' },
     pageSettings: { pageSize: 20 },
     height: '100%',
     editSettings: {
