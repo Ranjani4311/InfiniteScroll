@@ -10811,10 +10811,6 @@ ej.grids.Grid.Inject(ej.grids.InfiniteScroll);
 var grid = new ej.grids.Grid({
     dataSource: orderData,
     enableInfiniteScrolling: true,
-	rowRenderingMode:'Vertical',
-	allowExcelExport: true,
-    allowPdfExport: true,
-	enableAdaptiveUI: true,
     showColumnChooser: true,
     showColumnMenu: true,
     allowSorting: true,
