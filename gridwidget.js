@@ -10806,7 +10806,7 @@
         return value;
     });
 
-ej.grids.Grid.Inject(ej.grids.InfiniteScroll,ej.grids.Toolbar,ej.grids.Group,ej.grids.Aggregate,ej.grids.ColumnChooser,ej.grids.Sort,ej.grids.Edit,ej.grids.Filter, ej.grids.ColumnMenu);
+ej.grids.Grid.Inject(ej.grids.InfiniteScroll,ej.grids.Toolbar,ej.grids.Aggregate,ej.grids.ColumnChooser,ej.grids.Sort,ej.grids.Edit,ej.grids.Filter, ej.grids.ColumnMenu);
 
 var grid = new ej.grids.Grid({
     dataSource: orderData,
@@ -10814,8 +10814,6 @@ var grid = new ej.grids.Grid({
     showColumnChooser: true,
  showColumnMenu: true,
      allowSorting: true,
-     allowGrouping: false,
-    groupSettings: { showGroupedColumn: true },
     allowFiltering: true,
     filterSettings: { type: 'Excel' },
     pageSettings: { pageSize: 20 },
@@ -10872,12 +10870,12 @@ grid.appendTo('#Grid');
 
 
 
-grid.appendTo('#Grid');
-  grid.toolbarClick = (args) => {
-    if (args.item.id === grid.element.id + '_pdfexport') {
-      grid.pdfExport();
-    } else if (args.item.id === grid.element.id + '_excelexport') {
-      grid.excelExport();
-    }
+//grid.appendTo('#Grid');
+  // grid.toolbarClick = (args) => {
+  //   if (args.item.id === grid.element.id + '_pdfexport') {
+  //     grid.pdfExport();
+  //   } else if (args.item.id === grid.element.id + '_excelexport') {
+  //     grid.excelExport();
+  //   }
   };
 
