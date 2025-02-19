@@ -10811,11 +10811,11 @@ ej.grids.Grid.Inject(ej.grids.InfiniteScroll);
 var grid = new ej.grids.Grid({
     dataSource: orderData,
     enableInfiniteScrolling: true,
-    // showColumnChooser: true,
-    // showColumnMenu: true,
-    // allowSorting: true,
-    // allowGrouping: false,
-    // groupSettings: { showGroupedColumn: true },
+    showColumnChooser: true,
+ showColumnMenu: true,
+     allowSorting: true,
+     allowGrouping: false,
+    groupSettings: { showGroupedColumn: true },
     allowFiltering: true,
     filterSettings: { type: 'Excel' },
     pageSettings: { pageSize: 20 },
@@ -10854,16 +10854,16 @@ var grid = new ej.grids.Grid({
         validationRules: { required: true },
       },
     ],
-	// aggregates: [
- //      {
- //        columns: [
- //          {
- //            type: 'Sum',
- //            field: 'Freight',
- //            format: 'C2',
- //            footerTemplate: 'Sum: ${Sum}',
- //          },
- //        ],
+	 aggregates: [
+       {
+         columns: [
+          {
+            type: 'Sum',
+             field: 'Freight',
+             format: 'C2',
+            footerTemplate: 'Sum: ${Sum}',
+          },
+        ],
       },
     ],
     
