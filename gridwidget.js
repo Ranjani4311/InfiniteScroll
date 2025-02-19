@@ -10806,7 +10806,7 @@
         return value;
     });
 
-ej.grids.Grid.Inject(ej.grids.InfiniteScroll);
+ej.grids.Grid.Inject(ej.grids.InfiniteScroll,ej.grids.Toolbar,ej.grids.Group,ej.grids.Aggregate,ej.grids.ColumnChooser,ej.grids.Sort,ej.grids.Edit,ej.grids.Filter, ej.grids.ColumnMenu);
 
 var grid = new ej.grids.Grid({
     dataSource: orderData,
