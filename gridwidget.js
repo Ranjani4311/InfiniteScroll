@@ -10811,19 +10811,19 @@ ej.grids.Grid.Inject(ej.grids.InfiniteScroll,ej.grids.Toolbar,ej.grids.Aggregate
 var grid = new ej.grids.Grid({
     dataSource: orderData,
     enableInfiniteScrolling: true,
-    showColumnChooser: true,
- showColumnMenu: true,
-     allowSorting: true,
-    allowFiltering: true,
-    filterSettings: { type: 'Excel' },
+ //    showColumnChooser: true,
+ // showColumnMenu: true,
+ //     allowSorting: true,
+ //    allowFiltering: true,
+ //    filterSettings: { type: 'Excel' },
     pageSettings: { pageSize: 20 },
     height: '100%',
-    editSettings: {
-      allowAdding: true,
-      allowEditing: true,
-      allowDeleting: true,
-      mode: 'Dialog',
-    },
+    // editSettings: {
+    //   allowAdding: true,
+    //   allowEditing: true,
+    //   allowDeleting: true,
+    //   mode: 'Dialog',
+    // },
     columns: [
       {
         field: 'OrderID',
@@ -10867,15 +10867,4 @@ var grid = new ej.grids.Grid({
     
   });
 grid.appendTo('#Grid');
-
-
-
-//grid.appendTo('#Grid');
-  // grid.toolbarClick = (args) => {
-  //   if (args.item.id === grid.element.id + '_pdfexport') {
-  //     grid.pdfExport();
-  //   } else if (args.item.id === grid.element.id + '_excelexport') {
-  //     grid.excelExport();
-  //   }
- // };
 
