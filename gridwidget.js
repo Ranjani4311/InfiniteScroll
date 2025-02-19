@@ -10852,17 +10852,17 @@ var grid = new ej.grids.Grid({
         validationRules: { required: true },
       },
     ],
-	 aggregates: [
-       {
-         columns: [
-          {
-            type: 'Sum',
-             field: 'Freight',
-             format: 'C2',
-            footerTemplate: 'Sum: ${Sum}',
-          },
-        ],
-      },
+	 // aggregates: [
+  //      {
+  //        columns: [
+  //         {
+  //           type: 'Sum',
+  //            field: 'Freight',
+  //            format: 'C2',
+  //           footerTemplate: 'Sum: ${Sum}',
+  //         },
+  //       ],
+  //     },
     ],
     
   });
